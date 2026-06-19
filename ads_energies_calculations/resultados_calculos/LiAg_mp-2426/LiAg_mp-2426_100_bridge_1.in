@@ -1,0 +1,53 @@
+&CONTROL
+calculation = 'relax' ,
+restart_mode = 'restart' ,
+outdir = './LiAg_mp-2426_100_bridge_1' ,
+pseudo_dir = '/home/ecastro/trabajo_final/pseudos/' ,
+prefix = 'LiAg_mp-2426_100_bridge_1' ,
+max_seconds = 3550 ,
+nstep = 500 ,
+tstress = .true. ,
+tprnfor = .true. ,
+ /
+&SYSTEM
+ibrav = 0,
+nat = 7,
+ntyp = 2,
+ecutwfc = 55 ,
+ecutrho = 500 ,
+occupations = 'smearing'
+degauss = 0.03,
+smearing = 'methfessel-paxton'
+vdw_corr = 'DFT-D3' ,
+dftd3_threebody = .false. ,
+nosym = .true.,
+/
+&ELECTRONS
+conv_thr = 1.0d-6 ,
+mixing_beta = 0.3 ,
+diagonalization = 'david' ,
+electron_maxstep = 200
+ /
+&IONS
+ion_dynamics = 'bfgs' 
+ /
+CELL_PARAMETERS angstrom
+3.1227403300000005 0.0 1.912126974851425e-16
+5.021749453731695e-16 3.1227403300000005 1.912126974851425e-16
+0.0 0.0 27.806850824999998
+
+ATOMIC_SPECIES
+Ag  107.8682  Ag.pbe-n-rrkjus_psl.1.0.0.UPF
+Li  6.9410  Li.pbe-s-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS (Angstrom)
+Ag            0.7806787633        0.7806842790       17.7939936985
+Ag            0.7806850825        0.7806850825       14.6841104950
+Ag            0.7806850825        0.7806850825       11.5613701650
+Li            2.3420528521        2.3420557995       16.2660710598
+Li            2.3420552475        2.3420552475       13.1227403300
+Li            2.3420552475        2.3420552475       10.0000000000
+Li 2.3420489283000006 2.3420544439999995 19.7939936985
+
+K_POINTS automatic
+8 8 1   0 0 0
