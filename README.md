@@ -6,12 +6,12 @@ This project aims to help to identify materials suitable for use as anode curren
 
 Using the automatic workflow and the trained model, a database of 1507 adsorption energies was created. The considered substrates are made of pure transition metals, Li, Mg, Ca, B, Al, Ga, Si, Sn, Ge and Pb, as well as their alloys with Li.
 
-The ads_energies_calculations directory contains the complete workflow for computing adsorption energies. It includes a jupyter notebook responsable for:
+The `ads_energies_calculations` directory contains the complete workflow for computing adsorption energies. It includes a jupyter notebook responsable for:
 - Selecting materials
 - Creating slabs from them
-- Creating the .in files for Quantum ESPRESSO (QE) to relax the surfaces and compute the adsorption energies
+- Creating the `.in` files for Quantum ESPRESSO (QE) to relax the surfaces and compute the adsorption energies
 - Identifying the adsorption sites on surfaces
-- Extracting the results from the QE's .out files.
+- Extracting the results from the QE's `.out` files.
 
 [^1] V. Pande, V. Viswanathan. **“Computational Screening of Current Collectors for Enabling Anode-Free Lithium Metal Batteries”**. In: ACS Energy Letters 4.1 (2019), pp. 2952-2959. doi: 10.1021/acsenergylett.9b02306.
 
