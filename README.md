@@ -2,6 +2,16 @@
 
 An automated workflow to generate a database of adsorption energies and a Graph Neural Network (GNN) model to predict them are presented. PyMatGen tools are used to generate surfaces from Materials Project’s crystalline structures and to identify adsorption sites on them. The GNN model, based on Xie and Grossman's CGCNN model (2018), is implemented in PyTorch and designed to run on GPUs.
 
+https://img.shields.io/badge/Python-3.10+-blue.svg
+https://img.shields.io/badge/Pandas-2.2.2-red.svg
+https://img.shields.io/badge/Numpy-2.2.6-red.svg
+https://img.shields.io/badge/Matplotlib-30.10.3-red.svg
+https://img.shields.io/badge/SciPy-1.14.1-red.svg
+https://img.shields.io/badge/Joblib-1.4.2-red.svg
+https://img.shields.io/badge/ASE-3.25.0-red.svg
+https://img.shields.io/badge/PyMatGen+-orange.svg
+https://img.shields.io/badge/License-MIT-green.svg
+
 This project aims to help to identify materials suitable for use as anode current collectors in Anode-Free Lithium Batteries (AFLB). Pande and Viswanathan showed that the adsorption energy of Lithium (Li) on a metallic crystal's surface can be used as a descriptor of the material's performance as a current collector.[^1]
 
 Using the automatic workflow and the trained model, a database of 1507 adsorption energies was created. The considered substrates are made of pure transition metals, Li, Mg, Ca, B, Al, Ga, Si, Sn, Ge and Pb, as well as their alloys with Li.
